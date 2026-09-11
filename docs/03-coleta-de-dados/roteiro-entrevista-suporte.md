@@ -1,7 +1,3 @@
-
-### `03-coleta-dados/roteiro-entrevista-suporte.md`
-
-```md
 # Roteiro de entrevista — Suporte e Gestão de TI
 
 ## Objetivo
