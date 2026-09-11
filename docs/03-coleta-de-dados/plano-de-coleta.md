@@ -698,4 +698,4 @@ Ao final da etapa de coleta deverão ser produzidos insumos suficientes para ela
 O encerramento desta etapa não significa que novas informações não possam ser coletadas posteriormente.
 
 Caso durante a análise de riscos, requisitos ou alternativas seja identificada alguma lacuna relevante, poderá ser realizada uma coleta complementar, desde que registrada e justificada.
-````
+
