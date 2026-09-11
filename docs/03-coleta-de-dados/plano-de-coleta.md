@@ -1,4 +1,3 @@
-````md
 # Plano de Coleta de Dados
 
 ## 1. Objetivo da coleta
