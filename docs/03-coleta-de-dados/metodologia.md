@@ -1,64 +1,83 @@
-3. Metodologia de Pesquisa
-Este capítulo descreve os procedimentos metodológicos adotados para a elaboração deste Trabalho de Graduação, detalhando o tipo de pesquisa, a seleção dos participantes, os instrumentos utilizados para a coleta de dados e as técnicas de análise aplicadas para fundamentar a proposta de integração entre o Active Directory (AD) e o GLPI na FATEC Barueri.
+# 3. Metodologia de Pesquisa
 
-3.1. Natureza e Tipologia da Pesquisa
-A presente investigação caracteriza-se como um estudo de caso aplicado, de natureza mista (qualitativo-quantitativa) e com objetivos exploratório-descritivos.
+Este capítulo apresenta a fundamentação e os procedimentos metodológicos adotados para a condução do estudo de caso na FATEC Barueri. O objetivo é estabelecer a rastreabilidade entre a coleta de dados empíricos, o diagnóstico do cenário atual de acesso aos laboratórios de informática e a posterior especificação dos Requisitos Funcionais (RF) e Não Funcionais (RNF) para a integração do Active Directory (AD) com o GLPI.
 
-Exploratório e Descritivo: Procura mapear e descrever detalhadamente o cenário atual de gestão de identidades nos laboratórios de informática, identificando gargalos operacionais e os impactos diretos na dinâmica pedagógica.
+---
 
-Estudo de Caso Aplicado: Centra-se no ambiente real da FATEC Barueri, com o intuito de propor uma solução tecnológica prática e viável para o problema identificado.
+### 3.1. Natureza e Tipologia da Pesquisa
 
-Para garantir a validade dos resultados, a metodologia baseou-se na triangulação de dados, cruzando as percepções dos usuários finais (docentes e estudantes) com as evidências técnicas fornecidas pela equipe de Tecnologia da Informação (TI) e a observação direta do ambiente.
+A pesquisa caracteriza-se como um **estudo de caso aplicado**, de abordagem **mista (qualitativo-quantitativa)** e com objetivos **exploratório-descritivos**:
 
-3.2. População e Amostragem
-A amostragem foi definida por conveniência, focando-se nos intervenientes diretos no uso e na administração dos laboratórios de informática. A população do estudo foi segmentada em quatro perfis distintos, cada um com um propósito específico na coleta de dados:
+* **Exploratório-Descritiva:** Dedica-se a mapear e descrever a operação real dos laboratórios de informática, identificando gargalos no processo de *login*, fragilidades na gestão de identidades e impactos no tempo didático.
+* **Estudo de Caso Aplicado:** Foca no ambiente computacional específico da FATEC Barueri com a finalidade de fundamentar uma proposta de melhoria prática e tecnicamente viável.
 
-Estudantes: Usuários finais dos laboratórios. O objetivo foi avaliar a experiência de uso, os tempos de espera no início da sessão, a frequência de troca de computadores por falhas e as preocupações com a privacidade dos dados ao utilizar contas genéricas.
+Para assegurar a confiabilidade do diagnóstico, adotou-se o método de **triangulação de dados**, confrontando relatos dos usuários finais, evidências técnicas trazidas pela equipe de TI e observação direta do ambiente.
 
-Docentes: Responsáveis pela condução das aulas. A consulta a este grupo visou medir o impacto das falhas de acesso no tempo letivo, a estabilidade das projeções (datashow) e a disponibilidade dos softwares necessários.
+---
 
-Equipe de TI / Suporte (Diagnóstico): Focada no levantamento das rotinas atuais de manutenção, na gestão de contas locais, nos métodos de congelamento de disco e no volume de chamados informais.
+### 3.2. População, Amostragem e Perfis Mapeados
 
-Equipe de TI / Gestão (Planejamento): Focada na validação técnica da solução proposta, avaliando os pré-requisitos de infraestrutura, as políticas de grupo (GPO) e a viabilidade operacional da implementação do AD integrado ao GLPI.
+A amostragem foi definida por conveniência e acessibilidade no campus. A investigação cobriu quatro perfis complementares para capturar diferentes perspectivas da operação:
 
-3.3. Instrumentos de Coleta de Dados
-A coleta de dados primários foi realizada através da aplicação de questionários estruturados online, desenvolvidos na plataforma Google Forms. A estruturação dos instrumentos foi dividida em duas fases:
+1. **Estudantes (Usuários Finais):** Foco na experiência prática de acesso, tempo de início/término de sessão, retenção de arquivos locais, percepção de privacidade e frequência de troca de estações por falhas.
+2. **Docentes:** Foco no impacto do modelo de acesso sobre a dinâmica das aulas, estabilidade do sistema de projeção (*datashow*), disponibilidade de softwares específicos e perda de tempo letivo.
+3. **Equipe de TI / Suporte (Diagnóstico Operacional):** Foco nas rotinas de manutenção, atendimento a chamados, gestão de contas locais, procedimento de congelamento/restauração de disco e problemas mais recorrentes.
+4. **Equipe de TI / Gestão (Planejamento Estratégico):** Foco na infraestrutura de servidores, diretórios de usuários, políticas de grupo (GPO), requisitos de rede, conformidade com a LGPD e viabilidade de integração AD + GLPI.
 
-Fase 1 (Diagnóstico do Cenário Atual): Três questionários distintos direcionados a Estudantes, Docentes e equipe de Suporte de TI, com perguntas de escolha múltipla, caixas de seleção e campos abertos para recolher relatos específicos.
+---
 
-Fase 2 (Validação da Solução): Um questionário direcionado à Gestão de TI, focado exclusivamente no planejamento e na arquitetura da nova infraestrutura.
+### 3.3. Instrumentos de Coleta e Validação
 
-Adequação e Validação dos Instrumentos:
-Antes da aplicação definitiva, os formulários passaram por um ciclo de revisão com o orientador do projeto, resultando nos seguintes aprimoramentos metodológicos:
+A coleta combinou múltiplos instrumentos estruturados no repositório do projeto:
 
-Reajuste da perspectiva das perguntas dirigidas aos docentes, focando-se na sua observação da turma em sala de aula.
+```text
+docs/03-coleta-de-dados/
+├── plano-de-coleta.md
+├── metodologia.md
+├── roteiro-entrevista-suporte.md
+├── roteiro-entrevista-docentes.md
+├── roteiro-estudantes.md
+└── checklist-laboratorio.md
+Validação e Ajustes dos Instrumentos
+Antes da aplicação oficial, os questionários do Google Forms passaram por revisão técnica e pedagógica junto ao orientador, resultando em:
 
-Inclusão de variáveis referentes aos atrasos na configuração da projeção (datashow).
+Perspectiva Docente: Readequação das perguntas para capturar a observação do professor sobre o comportamento e as dificuldades da turma durante a aula.
 
-Substituição de jargões comerciais (ex.: marcas de softwares de restauração) por descrições do comportamento funcional do sistema, evitando ambiguidades para a equipe técnica.
+Aspectos Didático-Visuais: Inclusão de indicadores sobre problemas de conexão e exibição via datashow.
 
-Transformação de questões abertas sobre infraestrutura em categorias fechadas (sistemas operacionais, softwares, hardware e permissões), facilitando a posterior tabulação quantitativa.
+Padronização Técnica: Substituição de nomes comerciais de softwares de restauração por descrições funcionais do mecanismo de congelamento de disco.
 
-3.4. Procedimentos Éticos e Conformidade (LGPD)
-O planejamento da pesquisa obedeceu a rigorosos critérios éticos e aos princípios da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018). Os instrumentos foram desenhados para garantir o anonimato total dos docentes e estudantes.
-Não foram coletados dados sensíveis ou identificadores diretos, tais como nomes, números de Registro Acadêmico (RA), CPFs, e-mails pessoais ou senhas. As informações coletadas junto da TI restringiram-se a aspectos operacionais e de arquitetura, sem exposição de credenciais ou dados sigilosos da instituição.
+Categorização de Infraestrutura: Transformação de questões abertas sobre variações entre laboratórios em caixas de seleção fechadas (sistemas operacionais, softwares e permissões).
 
-3.5. Plano de Coleta: Planejado vs. Realizado
-O cronograma de execução da coleta de dados decorreu conforme sistematizado na tabela abaixo, distinguindo as etapas previstas das efetivamente realizadas:
+3.4. Execução da Coleta de Dados
+A fase de campo ocorreu de forma estruturada, compreendendo a elaboração dos instrumentos, validação com a orientação, limpeza de dados de teste e ampla divulgação junto aos públicos-alvo por meio de canais institucionais. O processo de coleta foi oficialmente encerrado em 10/10/2026, momento em que o recebimento de novas submissões nos formulários foi travado para dar início imediato à tabulação dos resultados, exportação dos dados brutos e análise temática.
 
-Etapa	Atividade	Execução	Status
-1. Desenho	Elaboração dos 4 instrumentos de pesquisa segmentados por perfil.	28/09 a 03/10/2026	Concluído
-2. Validação	Revisão técnica e pedagógica com o Orientador; ajustes de terminologia.	04/10 a 06/10/2026	Concluído
-3. Limpeza	Exclusão das respostas de teste para garantir a integridade da base de dados.	06/10/2026	Concluído
-4. Aplicação	Divulgação dos links junto da comunidade acadêmica e TI via Microsoft Teams.	06/10 a 09/10/2026	Concluído
-5. Fecho	Encerramento da coleta e bloqueio de novas submissões.	10/10/2026	Concluído
-6. Tabulação	Exportação dos dados e estruturação para análise e levantamento de requisitos.	10/10 a 11/10/2026	Em andamento
-3.6. Tratamento e Análise de Dados
-Para a interpretação dos resultados, os dados brutos foram exportados da plataforma de coleta e submetidos a duas abordagens de análise:
+3.5. Diretrizes de Privacidade, Segurança e LGPD
+Em estrita observância à Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e aos limites éticos da pesquisa acadêmica:
 
-Análise Quantitativa (Estatística Descritiva): As respostas a perguntas fechadas foram tabuladas automaticamente, gerando gráficos de frequências e percentagens. Este método permitiu quantificar as métricas de usabilidade, como o tempo médio de login, a recorrência de atrasos no início das aulas e a porcentagem de falhas de hardware/software.
+Minimização de Dados e Anonimato: Não foram solicitados dados pessoais identificáveis (nomes, e-mails pessoais, CPFs, RAs ou senhas) nos formulários de Estudantes e Docentes.
 
-Análise Qualitativa (Categorização Temática): As respostas abertas e as observações foram agrupadas em eixos temáticos: (1) Agilidade e Usabilidade no início das aulas; (2) Continuidade Pedagógica; (3) Suporte Técnico; e (4) Governança e Privacidade.
+Segurança da Informação: A consulta técnica à equipe de TI abrangeu apenas aspectos arquiteturais e operacionais, sem exposição de credenciais, listas de usuários ou vulnerabilidades de servidores.
 
-Tratamento de Divergências:
-No caso de discrepâncias entre os relatos dos usuários (estudantes/docentes) e as configurações relatadas pela equipe técnica, aplicou-se o método de triangulação. Tais divergências (por exemplo, a percepção de que os arquivos são guardados localmente versus a política de congelamento da máquina) foram registradas não como erros de coleta, mas como indicadores de lacunas na comunicação ou na compreensão do funcionamento atual do ambiente por parte dos usuários. Estes achados servirão de base direta para a formulação dos Requisitos Não Funcionais (RNF) do novo sistema.
+Limites Operacionais: A pesquisa não realizou testes de invasão, exploração de falhas, alteração de configurações de estações ou coleta não autorizada de logs.
+
+3.6. Classificação da Informação, Triangulação e Tratamento de Lacunas
+Os dados obtidos foram classificados segundo a sua origem e grau de confirmação:
+
+Relato: Informação declarada por estudantes, docentes ou equipe de TI.
+
+Observação: Informação constatada diretamente no ambiente por meio do checklist-laboratorio.md.
+
+Evidência Documental / Informação Validada: Informação confirmada pelo cruzamento de duas ou mais fontes compatíveis (ex: Relato do Suporte + Observação do Ambiente = Informação Validada).
+
+Plaintext
+[Relato dos Usuários]  \
+[Relato do Suporte]    --->  TRIANGULAÇÃO DE DADOS  --->  [Informação Validada / Requisito]
+[Observação Direta]   /
+Tratamento de Divergências e Limitações
+Discrepâncias de Relato: Caso ocorra divergência entre o relato dos usuários e a configuração declarada pela TI (ex: aluno afirmando salvar arquivos localmente versus TI reportando disco congelado), a divergência é tratada como uma lacuna de comunicação/percepção do modelo atual, fundamentando Requisitos Não Funcionais (RNF) de usabilidade e governança.
+
+Tratamento de Instrumentos sem Resposta: Diante da ausência de submissões diretas em um dos formulários previstos, a lacuna informacional foi tratada mediante triangulação por observação direta e análise da documentação técnica, garantindo o atendimento integral aos critérios de suficiência da pesquisa sem comprometer o cronograma do projeto.
+
+3.7. Rastreabilidade para as Próximas Etapas
+Cada dado validado nesta etapa recebe um identificador de origem (COL-xxx para coleta, OBS-xxx para observação e EV-xxx para evidências). Esses identificadores serão mapeados diretamente para a Matriz de Riscos (RIS) e para os Requisitos Funcionais (RF) e Não Funcionais (RNF), garantindo que toda decisão de projeto seja estritamente fundamentada em evidências empíricas do ambiente da FATEC Barueri.
