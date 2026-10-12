@@ -16,17 +16,22 @@ Nível	Consequências que caracterizam o nível
 Baixo	incômodo pontual, resolvido pelo próprio usuário em poucos minutos, sem perda de trabalho, sem necessidade de acionar a TI e sem exposição de dados pessoais.
 Médio	Interrompe parte da aula ou obriga a troca de máquina; exige atendimento da TI; causa perda de trabalho que pode ser refeito; permite uso indevido sem dano permanente; dificulta, mas não impede, a apuração de um incidente.
 Alto	compromete a aula ou o laboratório inteiro; causa perda de trabalho sem possibilidade de recuperação; permite alteração ou dano persistente em equipamentos e configurações; expõe dados pessoais de estudantes; impede que a instituição apure responsabilidades sobre um incidente.
+
 4. Critérios de probabilidade
 
 A probabilidade é estimada a partir das informações coletadas, e não da opinião isolada dos autores. Consideram-se a frequência relatada pelos estudantes, a percepção dos docentes, as respostas da equipe de TI e a existência de condições que facilitam o evento, como a senha genérica compartilhada informada pela TI.
 
 Nível	Informações que sustentam o nível
-Baixo	Não há relato do evento e sua ocorrência depende de conhecimento técnico específico ou da combinação de vários fatores.
-Médio	O evento foi relatado como raro ou ocasional, ou foi citado por apenas um grupo de respondentes, ou a condição existe, mas exige ação deliberada para ser explorada.
-Alto	O evento foi relatado como frequente, ou foi citado por mais de um grupo (estudantes, docentes e TI), ou a condição está sempre presente e pode ser explorada por qualquer usuário sem conhecimento técnico.
+
+Baixo -	Não há relato do evento e sua ocorrência depende de conhecimento técnico específico ou da combinação de vários fatores.
+
+Médio - O evento foi relatado como raro ou ocasional, ou foi citado por apenas um grupo de respondentes, ou a condição existe, mas exige ação deliberada para ser explorada.
+
+Alto -	O evento foi relatado como frequente, ou foi citado por mais de um grupo (estudantes, docentes e TI), ou a condição está sempre presente e pode ser explorada por qualquer usuário sem conhecimento técnico.
+
 5. Consideração dos controles atuais
 
-A classificação considera o cenário real, isto é, já levando em conta os controles existentes. Cada controle é registrado como efetivo, parcial ou inexistente, e só reduz em um nível a probabilidade ou o impacto quando houver evidência de que funciona. Por exemplo, a conta de estudante sem permissão para instalar programas é um controle existente, porém a própria TI relata alunos burlando restrições e acessando a BIOS, o que caracteriza um controle parcial. Da mesma forma, a identificação de usuários pelo cruzamento de câmeras com o mapa de sala do professor é um controle compensatório manual, que depende da colaboração do docente e não substitui um registro automático de quem utilizou cada máquina.
+A classificação considera o cenário real, isto é, já levando em conta os controles existentes. Cada controle é registrado como efetivo, parcial ou inexistente e só reduz em um nível a probabilidade ou o impacto quando houver evidência de que funciona. Por exemplo, a conta de estudante sem permissão para instalar programas é um controle existente, porém a própria TI relata alunos burlando restrições e acessando a BIOS, o que caracteriza um controle parcial. Da mesma forma, a identificação de usuários pelo cruzamento de câmeras com o mapa de sala do professor é um controle compensatório manual, que depende da colaboração do docente e não substitui um registro automático de quem utilizou cada máquina.
 
 6. Situações sem histórico suficiente
 
