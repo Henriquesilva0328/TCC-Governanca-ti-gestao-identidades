@@ -1,3 +1,7 @@
+# Delimitação de Escopo e Análise de Necessidades Acadêmicas
+
+---
+
 ## 1. Objetivo da Delimitação
 Esta seção define claramente a fronteira do projeto de TCC. O propósito é examinar cada dificuldade relatada durante a pesquisa de campo e responder a duas questões centrais:
 1. *Esta dificuldade continuaria a existir com a adoção de contas individuais via Active Directory e integração com o GLPI?*
