@@ -1,3 +1,7 @@
+# Resultados da Coleta de Dados por Eixos Temáticos
+
+---
+
 ## 1. Introdução e Agrupamento Temático
 Esta seção consolida e agrupa as respostas obtidas na pesquisa de campo com estudantes, equipe de TI e corpo docente, dividindo-as por eixos temáticos críticos para a operação e a experiência de uso nos laboratórios da FATEC Barueri.
 
