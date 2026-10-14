@@ -1,4 +1,4 @@
-adêmicos Esperados
+## Síntese da Análise e Benefícios Acadêmicos Esperados
 
 **Projeto:** Gestão de Identidades e Controle de Acesso aos Laboratórios de Informática  
 **Instituição:** FATEC Barueri  
