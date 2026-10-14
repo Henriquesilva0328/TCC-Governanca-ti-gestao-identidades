@@ -1,3 +1,7 @@
+# Plano de Coleta de Dados (Atualizado e Executado)
+
+---
+
 ## 1. Introdução e Objetivo
 
 Este documento detalha o planejamento e a execução da coleta de dados empíricos do TCC. O objetivo central é diagnosticar a realidade operacional, técnica e pedagógica dos laboratórios de informática da FATEC Barueri, fundamentando a criação de requisitos para a integração entre Active Directory (AD) e GLPI.
