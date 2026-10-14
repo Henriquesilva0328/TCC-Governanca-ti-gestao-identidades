@@ -1,4 +1,4 @@
-# Avaliação do Impacto Acadêmico das Alternativas e Indicadores para Piloto
+# Condições de Utilização Acadêmica e Critérios de Aceitação
 
 ---
 
