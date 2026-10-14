@@ -1,3 +1,7 @@
+# Registros da Coleta de Dados e Descrição da Participação
+
+---
+
 ## 1. Visão Geral da Participação
 A etapa de campo envolveu os três principais atores do ecossistema acadêmico dos laboratórios de informática da FATEC Barueri:
 * **Estudantes:** Amostra composta por 20 respondentes ativos dos cursos superiores de tecnologia (Gestão da Tecnologia da Information - GTI e Desenvolvimento de Software Multiplataforma - DSM).
