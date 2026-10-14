@@ -4,6 +4,8 @@ Este documento reúne os requisitos funcionais identificados a partir do diagnó
 
 Os requisitos deverão descrever as funcionalidades esperadas de uma possível solução de identificação individual e controle de acesso aos computadores dos laboratórios.
 
+---
+
 ## 1. Estrutura Padrão dos Requisitos
 Cada Requisito Funcional contém as seguintes propriedades:
 * **ID:** Identificador único do requisito.
