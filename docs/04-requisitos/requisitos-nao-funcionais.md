@@ -4,6 +4,8 @@ Este documento apresenta os requisitos relacionados à qualidade, desempenho, di
 
 O objetivo é estabelecer condições que deverão ser consideradas na avaliação das alternativas tecnológicas, respeitando as características do ambiente institucional.
 
+---
+
 ## 1. Lista de Requisitos Não Funcionais
 
 | ID | Categoria | Descrição Técnica e Métrica | Origem / Evidência | Justificativa | Prioridade | Forma de Verificação |
